@@ -1,0 +1,21 @@
+/**
+ * @license
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+import React from 'react';
+import { cn } from '@/src/lib/utils';
+
+interface ContainerProps {
+  children: React.ReactNode;
+  className?: string;
+  as?: React.ElementType;
+}
+
+export function Container({ children, className, as: Component = 'div' }: ContainerProps) {
+  return (
+    <Component className={cn('mx-auto max-w-7xl px-4 sm:px-6 lg:px-8', className)}>
+      {children}
+    </Component>
+  );
+}

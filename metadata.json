@@ -1,0 +1,6 @@
+{
+  "name": "Delhi Public School Nacharam",
+  "description": "Premium institutional website for DPS Nacharam, Hyderabad. A global campus platform highlighting academic excellence, student development, and world-class facilities.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

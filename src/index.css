@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+
+  --color-dps-green: #006F44;
+  --color-dps-green-dark: #004D30;
+  --color-dps-green-light: #E8F4EE;
+  --color-dps-white: #FEFEFE;
+  --color-dps-off-white: #F7F9F8;
+  --color-dps-text: #17211D;
+  --color-dps-muted: #66736D;
+  --color-dps-border: #DCE7E1;
+
+  /* Legacy mappings for components using old semantic names */
+  --color-inst-blue: #006F44;
+  --color-deep-navy: #004D30;
+  --color-bright-blue: #006F44;
+  --color-dps-gold: #006F44;
+  --color-warm-yellow: #E8F4EE;
+  --color-light-blue: #E8F4EE;
+  --color-off-white: #F7F9F8;
+  --color-charcoal: #17211D;
+
+  /* Semantic Mappings for standard tailwind classes */
+  --color-blue-900: #006F44;
+  --color-blue-950: #004D30;
+  --color-blue-800: #004D30;
+  --color-blue-100: #E8F4EE;
+  --color-blue-50: #E8F4EE;
+  --color-slate-50: #E8F4EE;
+  --color-slate-100: #DCE7E1;
+  --color-slate-200: #DCE7E1;
+  --color-slate-400: #66736D;
+  --color-slate-500: #66736D;
+  --color-slate-600: #66736D;
+  --color-slate-900: #004D30;
+  --color-slate-950: #004D30;
+}
+
+@layer base {
+  body {
+    @apply font-sans bg-dps-off-white text-dps-text;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif text-dps-green-dark;
+  }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
