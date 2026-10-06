@@ -47,7 +47,7 @@ export default function Results() {
 
           <div className="grid lg:grid-cols-2 gap-12">
             <div className="bg-dps-green-dark rounded-[40px] p-8 md:p-12 text-white">
-<h2 className="font-serif text-3xl md:text-4xl lg:text-5xl mb-8 leading-tight">
+<h2 className="font-serif text-3xl md:text-4xl lg:text-5xl mb-8 text-white" >
     CBSE Result Highlights
   </h2>              <div className="space-y-6">
                 {[
