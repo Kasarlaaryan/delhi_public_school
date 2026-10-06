@@ -33,35 +33,56 @@ export default function Home() {
           ))}
         </div>
       </div>
+{/* Institutional Introduction */}
+<section className="py-24 md:py-32 bg-dps-white">
+  <Container>
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+      
+      {/* Left Content */}
+      <div>
+        <span className="text-xs font-bold tracking-widest text-dps-green uppercase block mb-6">
+          OUR INSTITUTION
+        </span>
 
-      {/* Institutional Introduction */}
-      <section className="py-24 md:py-32 bg-dps-white">
-        <Container>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-            <div>
-              <span className="text-xs font-bold tracking-widest text-dps-green uppercase block mb-6">OUR INSTITUTION</span>
-              <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-white leading-tight mb-8">
-                An Education Designed for the Future
-              </h2>
-              <div className="flex gap-4 mb-8">
-                <div className="h-px flex-grow bg-dps-green-light mt-3" />
-                <p className="text-sm font-bold tracking-widest text-dps-muted uppercase shrink-0">FOUNDED ON EXCELLENCE</p>
-              </div>
-            </div>
-            <div className="flex flex-col gap-6">
-              <p className="text-lg text-dps-text leading-relaxed">
-                Delhi Public School Nacharam is a 22-acre premier educational campus in Hyderabad, committed to nurturing global citizens through a balance of academic rigour, critical thinking, and character development.
-              </p>
-              <p className="text-dps-muted leading-relaxed">
-                From CBSE and Cambridge International to IBDP and NIOS, we provide diverse academic pathways tailored to every student's potential. Our holistic approach ensures that students excel not just in classrooms, but in sports, arts, and leadership.
-              </p>
-              <Link to="/about" className="flex items-center gap-3 text-dps-green font-bold tracking-widest text-[10px] mt-4 hover:gap-5 transition-all">
-                LEARN MORE ABOUT US <ArrowRight className="w-4 h-4" />
-              </Link>
-            </div>
-          </div>
-        </Container>
-      </section>
+        <h2 className="font-serif text-4xl md:text-5xl lg:text-6xl text-dps-green leading-tight mb-8">
+          An Education Designed for the Future
+        </h2>
+
+        <div className="flex gap-4 mb-8 items-start">
+          <div className="h-px flex-grow bg-dps-green-light mt-3" />
+          <p className="text-sm font-bold tracking-widest text-dps-muted uppercase shrink-0">
+            FOUNDED ON EXCELLENCE
+          </p>
+        </div>
+      </div>
+
+      {/* Right Content */}
+      <div className="flex flex-col gap-6">
+        <p className="text-lg text-dps-text leading-relaxed">
+          Delhi Public School Nacharam is a 22-acre premier educational campus
+          in Hyderabad, committed to nurturing global citizens through a balance
+          of academic rigour, critical thinking, and character development.
+        </p>
+
+        <p className="text-dps-muted leading-relaxed">
+          From CBSE and Cambridge International to IBDP and NIOS, we provide
+          diverse academic pathways tailored to every student's potential. Our
+          holistic approach ensures that students excel not just in classrooms,
+          but in sports, arts, and leadership.
+        </p>
+
+        <Link
+          to="/about"
+          className="flex items-center gap-3 text-dps-green font-bold tracking-widest text-[10px] mt-4 hover:gap-5 transition-all"
+        >
+          LEARN MORE ABOUT US
+          <ArrowRight className="w-4 h-4" />
+        </Link>
+      </div>
+
+    </div>
+  </Container>
+</section>
 
       {/* Holistic Approach Pillars */}
       <section className="py-24 bg-dps-off-white overflow-hidden">
