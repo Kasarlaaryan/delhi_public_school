@@ -47,8 +47,9 @@ export default function Results() {
 
           <div className="grid lg:grid-cols-2 gap-12">
             <div className="bg-dps-green-dark rounded-[40px] p-8 md:p-12 text-white">
-              <h2 className="font-serif text-3xl mb-8">CBSE Result Highlights</h2>
-              <div className="space-y-6">
+<h2 className="font-serif text-3xl md:text-4xl lg:text-5xl mb-8 leading-tight">
+    CBSE Result Highlights
+  </h2>              <div className="space-y-6">
                 {[
                   "100% placement in top-tier Engineering & Medical colleges.",
                   "Consistent record of school toppers among the top 1% in the country.",
